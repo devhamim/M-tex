@@ -88,7 +88,12 @@
                                             <figure>
                                                 <div class="product_thumb">
                                                     <a class="primary_img"><img src="{{ asset('uploads/product') }}/{{ $product->image }}" alt=""></a>
-                                                    <a class="secondary_img"><img src="{{ asset('uploads/product') }}/{{ $product->image }}" alt=""></a>
+                                                    <a class="my-image-links secondary_img" data-gall="gallery01" href="{{ asset('uploads/product') }}/{{ $product->image }}">
+                                                        <img src="{{ asset('uploads/product') }}/{{ $product->image }}">
+                                                        <div class="product_icon">
+                                                            <i class="zmdi zmdi-plus-circle-o"></i>
+                                                        </div>
+                                                    </a>
 
                                                 </div>
                                                 <figcaption class="product_content">
@@ -241,3 +246,16 @@
 <!--contect area end-->
 
 @endsection
+
+@section('footer_scrip')
+<script>
+    new VenoBox({
+    selector: '.my-image-links',
+    numeration: true,
+    infinigall: true,
+    share: true,
+    spinner: 'rotating-plane'
+});
+</script>
+@endsection
+

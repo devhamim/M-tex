@@ -39,6 +39,8 @@
     <!--plugins css-->
     <link rel="stylesheet" href="{{asset('frontend')}}/css/plugins.css">
 
+    <link rel="stylesheet" href="{{asset('frontend/css/venobox.min.css')}}">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -242,6 +244,8 @@
 <script src="{{asset('frontend')}}/js/bootstrap.min.js"></script>
 <!--owl carousel min js-->
 <script src="{{asset('frontend')}}/js/owl.carousel.min.js"></script>
+
+<script src="{{asset('frontend/js/venobox.min.js')}}"></script>
 <!--slick min js-->
 <script src="{{asset('frontend')}}/js/slick.min.js"></script>
 <!--magnific popup min js-->
@@ -264,6 +268,8 @@
 <!-- Main JS -->
 <script src="{{asset('frontend')}}/js/main.js"></script>
 
+
+    @yield('footer_scrip')
 
 
 </body>
