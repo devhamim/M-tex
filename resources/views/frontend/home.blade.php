@@ -130,7 +130,7 @@
             </div>
             <div class="col-lg-3 col-5 text-end">
                 <div class="view__work">
-                    <a href="{{route('about_us')}}">Read More </a>
+                    <a href="{{route('our.clients')}}">Read More </a>
                 </div>
             </div>
         </div>
