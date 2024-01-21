@@ -29,62 +29,15 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-md-3 py-3">
-                <figure class="single_banner">
-                    <div class="banner_thumb">
-                        <a href="shop.html"><img src="{{asset('frontend')}}/img/bg/banner34.jpg" alt=""></a>
-                    </div>
-                </figure>
-            </div>
-            <div class="col-lg-3 col-md-3 py-3">
-               <figure class="single_banner">
-                    <div class="banner_thumb">
-                        <a href="shop.html"><img src="{{asset('frontend')}}/img/bg/banner35.jpg" alt=""></a>
-                    </div>
-                </figure>
-            </div>
-            <div class="col-lg-3 col-md-3 py-3">
-                <figure class="single_banner">
-                    <div class="banner_thumb">
-                        <a href="shop.html"><img src="{{asset('frontend')}}/img/bg/banner36.jpg" alt=""></a>
-                    </div>
-                </figure>
-            </div>
-            <div class="col-lg-3 col-md-3 py-3">
-                <figure class="single_banner">
-                     <div class="banner_thumb">
-                         <a href="shop.html"><img src="{{asset('frontend')}}/img/bg/banner35.jpg" alt=""></a>
-                     </div>
-                 </figure>
-            </div>
-            <div class="col-lg-3 col-md-3 py-3">
-                <figure class="single_banner">
-                     <div class="banner_thumb">
-                         <a href="shop.html"><img src="{{asset('frontend')}}/img/bg/banner35.jpg" alt=""></a>
-                     </div>
-                 </figure>
-            </div>
-            <div class="col-lg-3 col-md-3 py-3">
-                <figure class="single_banner">
-                     <div class="banner_thumb">
-                         <a href="shop.html"><img src="{{asset('frontend')}}/img/bg/banner35.jpg" alt=""></a>
-                     </div>
-                 </figure>
-            </div>
-            <div class="col-lg-3 col-md-3 py-3">
-                <figure class="single_banner">
-                     <div class="banner_thumb">
-                         <a href="shop.html"><img src="{{asset('frontend')}}/img/bg/banner35.jpg" alt=""></a>
-                     </div>
-                 </figure>
-            </div>
-            <div class="col-lg-3 col-md-3 py-3">
-                <figure class="single_banner">
-                     <div class="banner_thumb">
-                         <a href="shop.html"><img src="{{asset('frontend')}}/img/bg/banner35.jpg" alt=""></a>
-                     </div>
-                 </figure>
-            </div>
+            @foreach ($clients as $client)
+                <div class="col-lg-3 col-md-3 py-5">
+                    <figure class="single_banner">
+                        <div class="banner_thumb">
+                            <a><img src="{{asset('uploads/client')}}/{{$client->image}}" alt=""></a>
+                        </div>
+                    </figure>
+                </div>
+            @endforeach
         </div>
     </div>
 </div>
