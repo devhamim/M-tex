@@ -8,6 +8,15 @@ use Str;
 
 class AchieveController extends Controller
 {
+      /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      */
@@ -93,9 +102,9 @@ class AchieveController extends Controller
             $image->move(public_path('uploads/achieve'), $file_name);
             $validatesData['icon'] = $file_name;
         }
-        
+
         achieve::where('id', $id)->update($validatesData);
-        toast('Update Success','success');   
+        toast('Update Success','success');
         return redirect()->route('achieve.index');
     }
 

@@ -10,6 +10,16 @@ use Str;
 
 class SettingController extends Controller
 {
+
+     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      */
@@ -79,11 +89,11 @@ class SettingController extends Controller
             'youtube'=>'',
             'pinterest'=>'',
         ];
-        
+
          /**
          * Handle upload an image
          */
-       
+
         $validatesData = $request->validate($rules);
 
 

@@ -10,6 +10,16 @@ use Str;
 
 class PortfolioController extends Controller
 {
+
+     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      */
@@ -50,7 +60,7 @@ class PortfolioController extends Controller
             'define'            =>'required',
         ];
 
-        $validatesData = $request->validate($rules); 
+        $validatesData = $request->validate($rules);
         if($request->hasFile('image')){
             $image = $request->file('image');
             $extension = $image->getClientOriginalExtension();
@@ -112,11 +122,11 @@ class PortfolioController extends Controller
             $extension = $image->getClientOriginalExtension();
             $file_name = Str::random(5). rand(1000, 999999). '.'.$extension;
             $image->move(public_path('uploads/portfolio'), $file_name);
-            $validatesData['image'] = $file_name; 
+            $validatesData['image'] = $file_name;
         }
-        
+
         portfolio::where('id', $id)->update($validatesData);
-        toast('Update Success','success');   
+        toast('Update Success','success');
         return redirect()->route('portfolios.index');
     }
 
