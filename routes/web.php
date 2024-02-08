@@ -55,8 +55,10 @@ Route::get('/our/team', [FrontendController::class, 'our_team'])->name('our.team
 Route::get('/our/concern', [FrontendController::class, 'our_clients'])->name('our.clients');
 Route::get('/our/privacy/policy', [FrontendController::class, 'our_privacy_policy'])->name('our.privacy.policy');
 Route::get('/our/product/{id}', [FrontendController::class, 'our_product'])->name('our.product');
+Route::get('/our/sub/product/{id}', [FrontendController::class, 'our_sub_product'])->name('our.sub.product');
 Route::get('/our/media', [FrontendController::class, 'our_media'])->name('our.media');
 Route::get('/register/dealerform', [FrontendController::class, 'register_dealerform'])->name('register.dealerform');
+Route::get('/sustainability', [FrontendController::class, 'sustainability'])->name('sustainability');
 
 Route::post('/blog/comment', [BlogController::class, 'blog_comment'])->name('blog.comment');
 Route::get('/dealerform/visiting/{id}', [DealerFormController::class, 'dealerform_visiting'])->name('dealerform.visiting');

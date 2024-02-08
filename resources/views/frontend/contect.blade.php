@@ -34,14 +34,14 @@
 
                      <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram anteposuerit litterarum formas human. qui sequitur mutationem consuetudium lectorum. Mirum est notare quam</p>
                     <ul>
-                        @if ($settings->first()->address != null)
-                            <li><i class="fa fa-fax"></i> {{ $settings->first()->address }}</li>
-                        @endif
-                        @if ($settings->first()->email != null)
-                            <li><i class="fa fa-phone"></i> <a href="#">{{$settings->first()->email}}</a></li>
-                        @endif
+                        <li><i class="fa fa-map-marker"></i><strong>Register Office:</strong> M-Tex Resources Uniqueness | Quality | Commitment 20 Sukrabad, Flat No: C2, Dhanmondi, Dhaka – 1207</li>
+                        <li><i class="fa fa-map-marker"></i><strong>Corporate Office:</strong> M-Tex Resources Road No: 11, House No; 532, Baridhara DOHS, Dhaka – 1206.</li>
                         @if ($settings->first()->number != null)
-                            <li><i class="fa fa-envelope-o"></i><a href="tel:{{$settings->first()->number}}">{{$settings->first()->number}}</a>  </li>
+                            <li><i class="fa fa-phone"></i><strong>Mobile No:</strong> <a href="tel:{{$settings->first()->number}}">{{$settings->first()->number}}</a>  </li>
+                        @endif
+                            <li><i class="fa fa-phone"></i><strong>Tel No:</strong> <a href="tel:+880 48111852">+880 48111852</a>  </li>
+                        @if ($settings->first()->email != null)
+                            <li><i class="fa fa-envelope-o"></i><a href="#">{{$settings->first()->email}}</a></li>
                         @endif
                     </ul>
                 </div>

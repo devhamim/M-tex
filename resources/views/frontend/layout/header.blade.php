@@ -19,6 +19,9 @@
                                 <a href="{{ route('about_us') }}">about Us</a>
                             </li>
                             <li class="menu-item-has-children">
+                                <a href="{{ route('about_us') }}">sustainability</a>
+                            </li>
+                            <li class="menu-item-has-children">
                                 <div class="dropdown-menu-drop">
                                     <button class="menu-btn">Product ></button>
                                     <div class="menu-content">
@@ -78,20 +81,25 @@
                             <!--main menu start-->
                             <div class="main_menu menu_position">
                                 <nav>
-                                    <ul>
+                                    <ul id="subjectsNav">
                                         <li><a href="{{ url('/') }}">home</a></li>
                                         <li><a href="{{ route('about_us') }}">about Us</a></li>
-                                        <li>
-                                            <div class="dropdown-menu-drop">
-                                                <button class="menu-btn">Product ></button>
-                                                <div class="menu-content">
-                                                    @foreach ($categories as $category)
-                                                        <div class="links-hidden category">
-                                                            <a href="{{ route('our.product', $category->id) }}">{{ $category->name }}</a>
-                                                        </div>
-                                                    @endforeach
-                                                </div>
-                                            </div>
+                                        <li><a href="{{ route('sustainability') }}">sustainability</a></li>
+                                        <li><a href="#" title="SUBJECTS">Product ></a>
+
+                                            <ul id="subnav">
+                                                @foreach ($categories as $category)
+                                                <li><a href="{{ route('our.product', $category->id) }}">{{ $category->name }}</a>
+                                                    <ul>
+                                                        @foreach ($subcategories as $subcat)
+                                                        @if ($subcat->category_id == $category->id)
+                                                            <li><a href="{{ route('our.sub.product', $subcat->id) }}">{{ $subcat->name }}</a></li>
+                                                        @endif
+                                                        @endforeach
+                                                    </ul>
+                                                </li>
+                                                @endforeach
+                                            </ul>
                                         </li>
                                         <li><a href="{{ route('our.clients') }}">Client</a></li>
                                         <li><a href="{{ route('our.blog') }}">Blog</a></li>

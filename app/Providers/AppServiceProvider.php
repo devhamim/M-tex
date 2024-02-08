@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Models\category;
 use App\Models\setting;
+use App\Models\subcategory;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\ServiceProvider;
@@ -40,6 +41,10 @@ class AppServiceProvider extends ServiceProvider
         // category
         View::composer('frontend.layout.header', function ($view){
             $view->with('categories', category::where('status', 1)->get());
+        });
+        // subcategory
+        View::composer('frontend.layout.header', function ($view){
+            $view->with('subcategories', subcategory::where('status', 1)->get());
         });
         // setting
         View::composer('frontend.layout.app', function ($view){

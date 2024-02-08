@@ -53,53 +53,132 @@
     <script src="{{asset('frontend')}}/js/vendor/modernizr-3.7.1.min.js"></script>
 
     <style>
-        .dropdown-menu-drop {
-           position: relative;
-           display: inline-block;
-        }
-        .menu-content {
-           display: none;
-           position: absolute;
-           background-color: #252525;
-           min-width: 160px;
-           z-index: 999;
-        }
-        .menu-btn {
-            display: block;
-            font-size: 14px;
-            line-height: 20px;
-            padding: 6px 0;
-            text-transform: uppercase;
-            font-weight: 700;
-            position: relative;
-            background: transparent;
-            color: #fff;
-            border: none;
-        }
-        .links,.links-hidden{
-           display: inline-block;
-           color: rgb(255, 255, 255);
-           padding: 12px 16px;
-           text-decoration: none;
-           font-size: 18px;
-           font-weight: bold;
-        }
-        .links-hidden{
-           display: block;
-        }
-        .links{
-           display: inline-block;
-        }
-        .links-hidden:hover,.links:hover {
-           background-color: #3e3e3e;
-        }
-        .links-hidden:hover, a:hover{
-           color: #fff;
-        }
-        .dropdown-menu-drop:hover .menu-content {
-           display: block;
-        }
+
+        /* ============ */
+        /* Main */
+        #subjectsNav {
+    list-style: none;
+}
+
+#subjectsNav li {
+    display: block;
+    float: left;
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#subjectsNav li a:hover {
+    color: #ff6140;
+}
+
+#subnav li {
+    margin: 10px 0;
+}
+
+#subjectsNav ul {
+    background-color: rgba(32, 32, 32, 0.9);
+    opacity: 0;
+    height: 0;
+    transition: opacity 0.5s, height 0.5s;
+}
+
+#subjectsNav li:hover > ul {
+    opacity: 1;
+    height: auto;
+}
+
+/* Sub-menu */
+#subjectsNav ul {
+    list-style: none;
+    left: -25px;
+    margin: 20px 0;
+    padding: 0 30px;
+    position: absolute;
+    z-index: 99999;
+}
+
+#subjectsNav ul li {
+    float: none;
+    display: block;
+}
+
+#subjectsNav ul ul {
+    top: -80%;
+    left: 125%;
+}
+
+/* Define the fadeIn animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+       /* Popup container - can be anything you want */
+.popup {
+  /* position: relative; */
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 100%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 999;
+    bottom: 0%;
+    right: 0%;
+    margin-left: 0;
+    height: auto; /* Set height to auto */
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
     </style>
+
 </head>
 
 <body>
@@ -237,7 +316,8 @@
 <!-- JS
 ============================================ -->
 <!--jquery min js-->
-<script src="{{asset('frontend')}}/js/vendor/jquery-3.4.1.min.js"></script>
+{{-- <script src="{{asset('frontend')}}/js/vendor/jquery-3.4.1.min.js"></script> --}}
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 <!--popper min js-->
 <script src="{{asset('frontend')}}/js/popper.js"></script>
 <!--bootstrap min js-->

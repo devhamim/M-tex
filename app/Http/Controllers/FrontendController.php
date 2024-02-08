@@ -152,6 +152,17 @@ class FrontendController extends Controller
             'subcategorys'=>$subcategorys,
         ]);
     }
+    // our_sub_product
+    function our_sub_product($id){
+        $products = product::where('status', 1)->where('subcategory_id', $id)->paginate(24);
+        $categorys = subcategory::where('status', 1)->get();
+        $subcategorys = subcategory::where('status', 1)->where('id', $id)->get();
+        return view('frontend.product', [
+            'products'=>$products,
+            'categorys'=>$categorys,
+            'subcategorys'=>$subcategorys,
+        ]);
+    }
      //our_media
     function our_media(){
         $medias = media::where('status', 1)->get();
@@ -163,6 +174,11 @@ class FrontendController extends Controller
     // register_dealerform
     function register_dealerform(){
         return view('frontend.dealerform');
+    }
+
+    // sustainability
+    function sustainability(){
+        return view('frontend.sustainability');
     }
 
 }
