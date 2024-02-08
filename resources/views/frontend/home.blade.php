@@ -64,7 +64,7 @@
                     </div>
                     <div class="product_tab_btn">
                         <ul class="nav" role="tablist">
-                            @foreach ($categorys as $key => $category)
+                            @foreach ($categorys->take(5) as $key => $category)
                                 <li>
                                     <a class="{{ $key === 0 ? 'active' : '' }}" data-bs-toggle="tab" href="#{{ $category->name }}" role="tab" aria-controls="{{ $category->name }}" aria-selected="true">
                                         {{ $category->name }}
