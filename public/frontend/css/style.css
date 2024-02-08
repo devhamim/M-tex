@@ -567,7 +567,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .offcanvas_menu_wrapper {
   width: 290px;
   position: fixed;
-  background: #fff;
+  background: #ff6140;
   z-index: 99;
   top: 0;
   height: 100vh;
