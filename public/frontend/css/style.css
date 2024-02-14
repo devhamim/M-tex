@@ -1957,7 +1957,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   z-index: 999;
 }
 .header_two .sticky-header.sticky {
-  background: rgba(32, 32, 32, 0.9);
+  background: hsla(233, 55%, 12%, 0.9);
 }
 
 .color_two .main_menu nav > ul > li > a {
@@ -8249,7 +8249,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 /*  07. footer area css here */
 .footer_widgets {
-  background: #1f1f1f;
+  background: #0e1230;
 }
 
 .footer_top {
