@@ -56,7 +56,7 @@
 
         /* ============ */
         /* Main */
-        #subjectsNav {
+#subjectsNav {
     list-style: none;
 }
 
@@ -74,7 +74,7 @@
 }
 
 #subnav li {
-    margin: 10px 0;
+    margin: 13px 0;
 }
 
 #subjectsNav ul {
@@ -105,7 +105,7 @@
 }
 
 #subjectsNav ul ul {
-    top: -80%;
+    top: -120%;
     left: 125%;
 }
 
