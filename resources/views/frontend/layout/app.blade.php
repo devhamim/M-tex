@@ -78,7 +78,7 @@
 }
 
 #subjectsNav ul {
-    background-color: rgba(32, 32, 32, 0.9);
+    background: hsla(233, 55%, 12%, 0.9);
     opacity: 0;
     height: 0;
     transition: opacity 0.5s, height 0.5s;
@@ -94,7 +94,6 @@
     list-style: none;
     left: -25px;
     margin: 20px 0;
-    padding: 0 30px;
     position: absolute;
     z-index: 99999;
 }
@@ -102,11 +101,13 @@
 #subjectsNav ul li {
     float: none;
     display: block;
+    padding: 0 30px;
 }
 
 #subjectsNav ul ul {
     top: -120%;
-    left: 125%;
+    left: 100%;
+
 }
 
 /* Define the fadeIn animation */
