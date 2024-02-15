@@ -122,7 +122,7 @@
             <div class="col-7 col-lg-6">
                 <div class="section_title title_style2" style="text-align: start;">
                    <h2 class="mb-3" style="padding: 0;background: #f1f1f1">Our Client</h2>
-                   <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut laborum esse vero dolorum harum aliquid veniam aliquam dicta nostrum eos.</h5>
+                   <h5>This Section is under construction</h5>
                 </div>
             </div>
             <div class="col-lg-3">
