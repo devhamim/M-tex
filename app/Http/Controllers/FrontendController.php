@@ -164,11 +164,8 @@ class FrontendController extends Controller
         ]);
     }
      //our_media
-    function our_media(){
-        $medias = media::where('status', 1)->get();
-        return view('frontend.media', [
-            'medias'=>$medias,
-        ]);
+    function our_history(){
+        return view('frontend.history');
     }
 
     // register_dealerform

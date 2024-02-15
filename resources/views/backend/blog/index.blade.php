@@ -49,7 +49,7 @@
                                 <strong class="text-danger">{{ $message }}</strong>
                             @enderror
                         </div>
-                        
+
                         <div class="col-12 d-flex justify-content-end">
                             <div class="btn-box">
                                 <button type="submit" class="btn btn-sm btn-primary">Save</button>
@@ -76,7 +76,7 @@
                 <div class="table-filter-option">
                     <div class="row justify-content-between g-3">
                         <div class="col-xxl-4 col-6 col-xs-12">
-                            
+
                         </div>
                         <div class="col-xl-2 col-3 col-xs-12 d-flex justify-content-end">
                             <div id="productTableLength"></div>
@@ -156,30 +156,4 @@
 </div>
 @endsection
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    $(document).ready(function() {
-        const selectedTags = [];
-
-        $('#tags').on('keydown', function(e) {
-            if (e.key === 'Enter') {
-                e.preventDefault(); // Prevent form submission on Enter
-                const tag = $(this).val().trim();
-                if (tag !== '') {
-                    selectedTags.push(tag);
-                    $(this).val('');
-                    updateSelectedTags();
-                }
-            }
-        });
-
-        function updateSelectedTags() {
-            $('#selected-tags').empty();
-            selectedTags.forEach(function(tag) {
-                $('#selected-tags').append('<span class="tag bg-success text-white pb-1 px-2 rounded mx-1">' + tag + '</span><input type="hidden" readonly value="' + tag + '" name="tags[]" >');
-            });
-        }
-    });
-
-</script>
 

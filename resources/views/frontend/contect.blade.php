@@ -41,7 +41,7 @@
                         @endif
                             <li><i class="fa fa-phone"></i><strong>Tel No:</strong> <a href="tel:+880 48111852">+880 48111852</a>  </li>
                         @if ($settings->first()->email != null)
-                            <li><i class="fa fa-envelope-o"></i><a href="#">{{$settings->first()->email}}</a></li>
+                            <li><i class="fa fa-envelope-o"></i><a href="{{$settings->first()->email}}">{{$settings->first()->email}}</a></li>
                         @endif
                     </ul>
                 </div>

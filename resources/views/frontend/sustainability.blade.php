@@ -29,7 +29,7 @@
                         <h1 style="text-align: center">SUSTAINABLITY</h1>
                         <p>At M-TEX Resources, we passionately support worker rights, equitable pay, and sustainability in the fashion industry. By adhering to these values, we enable our customers to make ethical and ecologically conscious purchasing decisions. Moreover, we also promise not to use any components that come from animals in any of our goods.</p>
                         <p>By adhering to strict codes of behavior and international standards, we hope to provide a model for ethical business operations. In addition to being consistent with our basic principles, this unwavering dedication to moral standards enables our clients to make decisions that are in line with their ethical convictions and personal style.</p>
-                        <p>We are following international standards and code of conduct.</p>
+                        {{-- <p>We are following international standards and code of conduct.</p>
                         <h4 style="font-size: 20px">ISO Certified</h4>
                         <p class="text-danger">In order to increase customer satisfaction via satisfying customer requirements, this international standard encourages the adoption of a process approach during the development, implementation, and effectiveness improvement of a quality management system.</p>
                         <h4 style="font-size: 20px">amfori@BSCI</h4>
@@ -51,7 +51,7 @@
                         <h4 style="font-size: 20px">Higg Index</h4>
                         <p>The Higg Index is an apparel and footwear self-assessment standard for assessing environmental and social sustainable throughout the supply chain. It was developed by the sustainable apparel coalition, a nonprofit organization founded by a group of fashion companies and the United States government environmental protection Agency. Across topics such as water use, carbon emissions and labor conditions; consumer goods. Manufacturers, government, NGO’s and consumers can use the Higg Index to inform their individual sustainable strategies and drive collective industry transformations.</p>
                         <h4 style="font-size: 20px">Better work</h4>
-                        <p>Better Work a collaboration between the United Nations “International Labour Organization (ILO) and the International Finance Corporation (IFC) a member of the World Bank group isa comprehensive programmed bringing together all levels of the garments industry to improve working conditions, respect of workers’ Labour rights and boost the competitiveness of apparel and footwear business.</p>
+                        <p>Better Work a collaboration between the United Nations “International Labour Organization (ILO) and the International Finance Corporation (IFC) a member of the World Bank group isa comprehensive programmed bringing together all levels of the garments industry to improve working conditions, respect of workers’ Labour rights and boost the competitiveness of apparel and footwear business.</p> --}}
                     </div>
                 </div>
 
@@ -64,9 +64,9 @@
 <section class="blog_section color_two mb-62 pb-3">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-6 m-auto">
+            <div class="col-12 col-lg-11 m-auto">
                 <div class="section_title title_style2">
-                   <h2 class="mb-3">ZXY Certifications</h2>
+                   <h2 class="mb-3">We are following international standards and code of conduct.</h2>
                    <h5></h5>
                 </div>
             </div>
@@ -78,7 +78,7 @@
                         <article class="single_blog text-center">
                             <figure>
                                 <div class="blog_thumb">
-                                    <a><img style="width: 50%; margin: 0 auto;" src="{{ asset('frontend/img/sustainability/1.jpeg') }}" alt=""></a>
+                                    <a><img style="width: 50%; margin: 0 auto;" src="{{ asset('frontend/img/sustainability/6.jpeg') }}" alt=""></a>
                                 </div>
                                 <figcaption class="blog_content">
                                 <h4 class="post_title"><a>GOTS (Global Textile Standard)</a></h4>
@@ -101,7 +101,7 @@
                         <article class="single_blog text-center">
                             <figure>
                                 <div class="blog_thumb">
-                                    <a><img style="width: 50%; margin: 0 auto;" src="{{ asset('frontend/img/sustainability/2.jpeg') }}" alt=""></a>
+                                    <a><img style="width: 50%; margin: 0 auto;" src="{{ asset('frontend/img/sustainability/3.jpeg') }}" alt=""></a>
                                 </div>
                                 <figcaption class="blog_content">
                                 <h4 class="post_title"><a>Friend of ZDHC - Vendor</a></h4>
@@ -124,7 +124,7 @@
                         <article class="single_blog text-center">
                             <figure>
                                 <div class="blog_thumb">
-                                    <a><img style="width: 50%; margin: 0 auto;" src="{{ asset('frontend/img/sustainability/3.jpeg') }}" alt=""></a>
+                                    <a><img style="width: 50%; margin: 0 auto;" src="{{ asset('frontend/img/sustainability/11.png') }}" alt=""></a>
                                 </div>
                                 <figcaption class="blog_content">
                                 <h4 class="post_title"><a>EcoVadis 2023 (Silver)</a></h4>
@@ -147,7 +147,7 @@
                         <article class="single_blog text-center">
                             <figure>
                                 <div class="blog_thumb">
-                                    <a><img style="width: 50%; margin: 0 auto;" src="{{ asset('frontend/img/sustainability/4.jpeg') }}" alt=""></a>
+                                    <a><img style="width: 50%; margin: 0 auto;" src="{{ asset('frontend/img/sustainability/7.jpeg') }}" alt=""></a>
                                 </div>
                                 <figcaption class="blog_content">
                                 <h4 class="post_title"><a>Higg Index</a></h4>
@@ -170,12 +170,12 @@
                         <article class="single_blog text-center">
                             <figure>
                                 <div class="blog_thumb">
-                                    <a><img style="width: 50%; margin: 0 auto;" src="{{ asset('frontend/img/sustainability/5.jpeg') }}" alt=""></a>
+                                    <a><img style="width: 50%; margin: 0 auto;" src="{{ asset('frontend/img/sustainability/10.png') }}" alt=""></a>
                                 </div>
                                 <figcaption class="blog_content">
                                 <h4 class="post_title"><a>ISO (Certified Company) - 9001:2015</a></h4>
                                     <footer class="btn_more">
-                                        <p>This International Standard promotes the adoption of a process approach when developing, implementing and improving the effectiveness.</p>
+                                        <p>In order to increase customer satisfaction via satisfying customer requirements, this international standard encourages the adoption</p>
                                     </footer>
                                 </figcaption>
                             </figure>
@@ -183,7 +183,7 @@
                         <div class="col-lg-12 m-auto text-center">
                             <div class="popup" onclick="myFunction('popup6')">
                                 <strong class="pt-5">Read More</strong>
-                                <span class="popuptext" id="popup6">This International Standard promotes the adoption of a process approach when developing, implementing and improving the effectiveness of a quality management system, to enhance customer satisfaction by meeting customer requirements</span>
+                                <span class="popuptext" id="popup6">In order to increase customer satisfaction via satisfying customer requirements, this international standard encourages the adoption of a process approach during the development, implementation, and effectiveness improvement of a quality management system.</span>
                             </div>
                         </div>
                     </div>
@@ -193,7 +193,7 @@
                         <article class="single_blog text-center">
                             <figure>
                                 <div class="blog_thumb">
-                                    <a><img style="width: 50%; margin: 0 auto;" src="{{ asset('frontend/img/sustainability/6.jpeg') }}" alt=""></a>
+                                    <a><img style="width: 50%; margin: 0 auto;" src="{{ asset('frontend/img/sustainability/12.png') }}" alt=""></a>
                                 </div>
                                 <figcaption class="blog_content">
                                 <h4 class="post_title"><a>Textile Exchange</a></h4>
@@ -216,7 +216,7 @@
                         <article class="single_blog text-center">
                             <figure>
                                 <div class="blog_thumb">
-                                    <a><img style="width: 50%; margin: 0 auto;" src="{{ asset('frontend/img/sustainability/7.jpeg') }}" alt=""></a>
+                                    <a><img style="width: 50%; margin: 0 auto;" src="{{ asset('frontend/img/sustainability/1.jpeg') }}" alt=""></a>
                                 </div>
                                 <figcaption class="blog_content">
                                 <h4 class="post_title"><a>Global Recycled Standard</a></h4>
@@ -239,7 +239,7 @@
                         <article class="single_blog text-center">
                             <figure>
                                 <div class="blog_thumb">
-                                    <a><img style="width: 50%; margin: 0 auto;" src="{{ asset('frontend/img/sustainability/8.jpeg') }}" alt=""></a>
+                                    <a><img style="width: 50%; margin: 0 auto;" src="{{ asset('frontend/img/sustainability/13.png') }}" alt=""></a>
                                 </div>
                                 <figcaption class="blog_content">
                                 <h4 class="post_title"><a>OEKO-TEX (Standard 100)</a></h4>

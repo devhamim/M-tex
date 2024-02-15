@@ -857,12 +857,12 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .main_menu {
-  margin-right: 42px;
+  /* margin-right: 42px; */
   padding-right: 42px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main_menu {
-    margin-right: 22px;
+    /* margin-right: 22px; */
     padding-right: 22px;
   }
 }
@@ -1957,7 +1957,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   z-index: 999;
 }
 .header_two .sticky-header.sticky {
-  background: hsla(233, 55%, 12%, 0.9);
+  background: hsla(195, 95%, 68%, 0.9);
 }
 
 .color_two .main_menu nav > ul > li > a {
@@ -7644,19 +7644,19 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .subscribe_form form input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #fff;
+  color: #000;
 }
 .subscribe_form form input::-moz-placeholder {
   /* Firefox 19+ */
-  color: #fff;
+  color: #000;
 }
 .subscribe_form form input:-ms-input-placeholder {
   /* IE 10+ */
-  color: #fff;
+  color: #000;
 }
 .subscribe_form form input:-moz-placeholder {
   /* Firefox 18- */
-  color: #fff;
+  color: #000;
 }
 .subscribe_form form input {
   width: 100%;
@@ -7665,7 +7665,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   padding: 0 15px;
   height: 48px;
   font-size: 13px;
-  color: #fff;
+  color: #000;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .subscribe_form form input {
@@ -8249,7 +8249,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 /*  07. footer area css here */
 .footer_widgets {
-  background: #0e1230;
+  background: #5fd3fb;
 }
 
 .footer_top {
@@ -8287,7 +8287,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #ffffff;
+  color: #000;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .widgets_container h3 {
@@ -8324,7 +8324,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .contact_us > p {
   font-size: 15px;
   line-height: 20px;
-  color: #ffffff;
+  color: #000;
   margin-bottom: 10px;
 }
 .contact_us > p a:hover {
@@ -8356,7 +8356,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .footer_desc p {
   font-size: 14px;
   line-height: 23px;
-  color: #ffffff;
+  color: #000;
 }
 @media only screen and (max-width: 767px) {
   .footer_desc p {
@@ -8375,7 +8375,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
-  color: #ffffff;
+  color: #000;
 }
 .footer_menu ul li a:hover {
   color: #ff6140;
@@ -8475,7 +8475,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   display: block;
   text-align: center;
   font-size: 14px;
-  color: #c8c8c8;
+  color: #000;
   border: 1px solid #4d4d4d;
 }
 .footer_social ul li a:hover {
@@ -8503,7 +8503,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   text-transform: capitalize;
   line-height: 25px;
   font-size: 14px;
-  color: #bdbdbd;
+  color: #000;
 }
 @media only screen and (max-width: 767px) {
   .copyright_area p {

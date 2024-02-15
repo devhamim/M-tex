@@ -78,7 +78,7 @@
 }
 
 #subjectsNav ul {
-    background: hsla(233, 55%, 12%, 0.9);
+    background: hsla(195, 95%, 68%, 0.9);
     opacity: 0;
     height: 0;
     transition: opacity 0.5s, height 0.5s;

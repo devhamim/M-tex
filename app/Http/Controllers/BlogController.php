@@ -75,10 +75,8 @@ class BlogController extends Controller
     public function edit(string $id)
     {
         $blogs = blog::find($id);
-        $tagsAsString = $blogs->tags;
         return view('backend.blog.edit', [
             'blogs'=>$blogs,
-            'tagsAsString'=>$tagsAsString,
         ]);
     }
 

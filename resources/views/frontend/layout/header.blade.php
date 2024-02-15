@@ -71,7 +71,7 @@
         <div class="header_container sticky-header">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-3">
+                    <div class="col-lg-2">
                         <div class="logo">
                             <a href="{{ url('/') }}">
                                 @if ($setting->first()->logo != null)
@@ -80,13 +80,14 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-9">
+                    <div class="col-lg-10">
                         <div class="header_container_right color_two">
                             <!--main menu start-->
                             <div class="main_menu menu_position">
                                 <nav>
                                     <ul id="subjectsNav">
                                         <li><a href="{{ url('/') }}">home</a></li>
+                                        <li><a href="{{ route('our.history') }}">history</a></li>
                                         <li><a href="{{ route('about_us') }}">about Us</a></li>
                                         <li><a href="{{ route('sustainability') }}">sustainability</a></li>
                                         <li><a href="#" title="SUBJECTS">Product ></a>
