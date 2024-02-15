@@ -36,9 +36,8 @@
                             <div class="blog-post-meta">
                                 <ul>
                                     @if ($blogs->first()->added_by != null)
-                                        <li><a ><i class="fas fa-user-circle"></i>{{ $blogs->first()->rel_to_user->name }}</a> </li>
+                                        <li><a>{{ $blogs->first()->rel_to_user->name }}</a> </li>
                                     @endif
-                                    <li><i class="far fa-comments"></i>Comment</li>
                                 </ul>
                             </div>
                             <p>{!! $blogs->first()->description !!}</p>
