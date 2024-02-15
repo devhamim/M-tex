@@ -87,8 +87,8 @@
                                 <nav>
                                     <ul id="subjectsNav">
                                         <li><a href="{{ url('/') }}">home</a></li>
-                                        <li><a href="{{ route('our.history') }}">history</a></li>
                                         <li><a href="{{ route('about_us') }}">about Us</a></li>
+                                        <li><a href="{{ route('our.history') }}">history</a></li>
                                         <li><a href="{{ route('sustainability') }}">sustainability</a></li>
                                         <li><a href="#" title="SUBJECTS">Product ></a>
 
