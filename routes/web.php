@@ -56,7 +56,7 @@ Route::get('/our/concern', [FrontendController::class, 'our_clients'])->name('ou
 Route::get('/our/privacy/policy', [FrontendController::class, 'our_privacy_policy'])->name('our.privacy.policy');
 Route::get('/our/product/{id}', [FrontendController::class, 'our_product'])->name('our.product');
 Route::get('/our/sub/product/{id}', [FrontendController::class, 'our_sub_product'])->name('our.sub.product');
-Route::get('/our/history', [FrontendController::class, 'our_history'])->name('our.history');
+Route::get('/our/promise', [FrontendController::class, 'our_promise'])->name('our.promise');
 Route::get('/register/dealerform', [FrontendController::class, 'register_dealerform'])->name('register.dealerform');
 Route::get('/sustainability', [FrontendController::class, 'sustainability'])->name('sustainability');
 

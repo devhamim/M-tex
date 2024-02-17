@@ -567,7 +567,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .offcanvas_menu_wrapper {
   width: 290px;
   position: fixed;
-  background: #ff6140;
+  background: #5fd3fb;
   z-index: 99;
   top: 0;
   height: 100vh;
@@ -858,7 +858,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .main_menu {
   /* margin-right: 42px; */
-  padding-right: 42px;
+  /* padding-right: 42px; */
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main_menu {
@@ -908,7 +908,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .main_menu nav > ul > li > a {
   display: block;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   padding: 6px 0;
   text-transform: uppercase;

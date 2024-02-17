@@ -42,7 +42,7 @@
                                     <ul>
                                         <li><a href="{{ url('/') }}">Home</a></li>
                                         <li><a href="{{ route('about_us') }}">About Us</a></li>
-                                        <li><a href="{{ route('our.history') }}">History</a></li>
+                                        <li><a href="{{ route('our.promise') }}">Our Promise</a></li>
                                         <li><a href="{{ route('sustainability') }}">Sustainability</a></li>
                                         <li><a href="{{ route('our.clients') }}">Client</a></li>
                                         <li><a href="{{ route('our.blog') }}">Blog</a></li>

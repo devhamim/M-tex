@@ -54,74 +54,8 @@
 
     <style>
 
-        /* ============ */
-        /* Main */
-#subjectsNav {
-    list-style: none;
-}
 
-#subjectsNav li {
-    display: block;
-    float: left;
-    position: relative;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-#subjectsNav li a:hover {
-    color: #ff6140;
-}
-
-#subnav li {
-    margin: 13px 0;
-}
-
-#subjectsNav ul {
-    background: hsla(195, 95%, 68%, 0.9);
-    opacity: 0;
-    height: 0;
-    transition: opacity 0.5s, height 0.5s;
-}
-
-#subjectsNav li:hover > ul {
-    opacity: 1;
-    height: auto;
-}
-
-/* Sub-menu */
-#subjectsNav ul {
-    list-style: none;
-    left: -25px;
-    margin: 20px 0;
-    position: absolute;
-    z-index: 99999;
-}
-
-#subjectsNav ul li {
-    float: none;
-    display: block;
-    padding: 0 30px;
-}
-
-#subjectsNav ul ul {
-    top: -120%;
-    left: 100%;
-
-}
-
-/* Define the fadeIn animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-
-       /* Popup container - can be anything you want */
+/* Popup container - can be anything you want */
 .popup {
   /* position: relative; */
   display: inline-block;
@@ -178,6 +112,92 @@
   from {opacity: 0;}
   to {opacity:1 ;}
 }
+
+
+/* HTML Nav Styles */
+
+body * {
+   margin:0;
+   padding:0;
+}
+
+/* HTML Nav Styles */
+.header_container_right {
+    position:relative;
+}
+
+nav menuitem {
+   display:block;
+   opacity:0;
+   cursor:pointer;
+}
+
+nav menuitem > menu {
+   position: absolute;
+   pointer-events:none;
+}
+nav > menu { display:flex; }
+
+nav > menu > menuitem { pointer-events: all; opacity:1; }
+menu menuitem a { white-space:nowrap; display:block; }
+
+menuitem:hover > menu {
+   pointer-events:initial;
+}
+menuitem:hover > menu > menuitem,
+menu:hover > menuitem{
+   opacity:1;
+}
+nav > menu > menuitem menuitem menu {
+   transform:translateX(100%);
+   top:0; right:0;
+}
+/* User Styles Below Not Required */
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+   color:#fff;
+   transition: background 0.5s, color 0.5s, transform 0.5s;
+   padding:20px 25px;
+   position:relative;
+}
+
+nav a:hover:before {
+   content: '';
+   top:0;left:0;
+   position:absolute;
+   background:rgba(0, 0, 0, 0.2);
+   width:100%;
+   height:100%;
+}
+
+
+nav > menu > menuitem > menu > menuitem{
+   transition: transform 0.6s, opacity 0.6s;
+   transform:translateY(150%);
+   opacity:0;
+}
+nav > menu > menuitem:hover > menu > menuitem,
+nav > menu > menuitem.hover > menu > menuitem{
+   transform:translateY(0%);
+   opacity: 1;
+}
+
+menuitem > menu > menuitem > menu > menuitem{
+   transition: transform 0.6s, opacity 0.6s;
+   transform:translateX(195px) translateY(0%);
+   opacity: 0;
+}
+menuitem > menu > menuitem:hover > menu > menuitem,
+menuitem > menu > menuitem.hover > menu > menuitem{
+   transform:translateX(0) translateY(0%);
+   opacity: 1;
+}
+
+
     </style>
 
 </head>

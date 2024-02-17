@@ -84,13 +84,14 @@
                         <div class="header_container_right color_two">
                             <!--main menu start-->
                             <div class="main_menu menu_position">
-                                <nav>
+                                {{-- <nav>
                                     <ul id="subjectsNav">
                                         <li><a href="{{ url('/') }}">home</a></li>
                                         <li><a href="{{ route('about_us') }}">about Us</a></li>
-                                        <li><a href="{{ route('our.history') }}">history</a></li>
+                                        <li><a href="{{ route('our.promise') }}">Promise</a></li>
                                         <li><a href="{{ route('sustainability') }}">sustainability</a></li>
-                                        <li><a href="#" title="SUBJECTS">Product ></a>
+                                        <li>
+                                            <a href="#" title="SUBJECTS">Product</a>
 
                                             <ul id="subnav">
                                                 @foreach ($categories as $category)
@@ -105,11 +106,73 @@
                                                 </li>
                                                 @endforeach
                                             </ul>
+
                                         </li>
+
                                         <li><a href="{{ route('our.clients') }}">Client</a></li>
                                         <li><a href="{{ route('our.blog') }}">Blog</a></li>
                                         <li><a href="{{ route('contect') }}"> Contact Us</a></li>
                                     </ul>
+
+
+                                    @foreach ($categories as $category)
+                                                <li><a href="{{ route('our.product', $category->id) }}">{{ $category->name }}</a>
+                                                    <ul>
+                                                        @foreach ($subcategories as $subcat)
+                                                        @if ($subcat->category_id == $category->id)
+                                                            <li><a href="{{ route('our.sub.product', $subcat->id) }}">{{ $subcat->name }}</a></li>
+                                                        @endif
+                                                        @endforeach
+                                                    </ul>
+                                                </li>
+                                                @endforeach
+                                </nav> --}}
+                                <nav style="text-align: end">
+                                    <menu>
+                                        <menuitem style="color: #fff">
+                                            <a href="{{ url('/') }}">Home</a>
+                                        </menuitem>
+                                        <menuitem style="color: #fff">
+                                            <a href="{{ route('about_us') }}">About Us</a>
+                                        </menuitem>
+                                        <menuitem style="color: #fff">
+                                            <a href="{{ route('our.promise') }}">Promise</a>
+                                        </menuitem>
+                                        <menuitem style="color: #fff">
+                                            <a href="{{ route('sustainability') }}">Sustainability</a>
+                                        </menuitem>
+                                        <menuitem id="demo1" style="color: #fff">
+                                            <a>Product</a>
+                                            <menu>
+                                                {{-- <menuitem><a>about</a></menuitem> --}}
+                                                @foreach ($categories as $category)
+                                                    <menuitem style="background: hsla(195, 95%, 68%, 0.9); text-align: center">
+                                                        <a href="{{ route('our.product', $category->id) }}">{{ $category->name }}</a>
+                                                        <menu >
+                                                            @foreach ($subcategories as $subcat)
+                                                                @if ($subcat->category_id == $category->id)
+                                                                    <menuitem style="background: hsla(195, 95%, 68%, 0.9)">
+                                                                        <a href="{{ route('our.sub.product', $subcat->id) }}">{{ $subcat->name }}</a>
+                                                                    </menuitem>
+                                                                @endif
+                                                            @endforeach
+                                                        </menu>
+                                                    </menuitem>
+                                                @endforeach
+
+
+                                            </menu>
+                                        </menuitem>
+                                        <menuitem style="color: #fff">
+                                            <a href="{{ route('our.clients') }}">Client</a>
+                                        </menuitem>
+                                        <menuitem style="color: #fff">
+                                            <a href="{{ route('our.blog') }}">Blog</a>
+                                        </menuitem>
+                                        <menuitem style="color: #fff">
+                                            <a href="{{ route('contect') }}"> Contact Us</a>
+                                        </menuitem>
+                                    </menu>
                                 </nav>
                             </div>
                         </div>
@@ -121,3 +184,46 @@
     </div>
 </header>
 
+@section('footer_scrip')
+<script>
+    // For the thumbnail demo! :]
+
+var count = 1
+setTimeout(demo, 500)
+setTimeout(demo, 700)
+setTimeout(demo, 900)
+setTimeout(reset, 2000)
+
+setTimeout(demo, 2500)
+setTimeout(demo, 2750)
+setTimeout(demo, 3050)
+
+
+var mousein = false
+function demo() {
+   if(mousein) return
+   document.getElementById('demo' + count++)
+      .classList.toggle('hover')
+
+}
+
+function demo2() {
+   if(mousein) return
+   document.getElementById('demo2')
+      .classList.toggle('hover')
+}
+
+function reset() {
+   count = 1
+   var hovers = document.querySelectorAll('.hover')
+   for(var i = 0; i < hovers.length; i++ ) {
+      hovers[i].classList.remove('hover')
+   }
+}
+
+document.addEventListener('mouseover', function() {
+   mousein = true
+   reset()
+})
+</script>
+@endsection

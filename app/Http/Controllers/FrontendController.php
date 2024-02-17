@@ -164,7 +164,7 @@ class FrontendController extends Controller
         ]);
     }
      //our_media
-    function our_history(){
+    function our_promise(){
         return view('frontend.history');
     }
 

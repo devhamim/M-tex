@@ -60,7 +60,7 @@
                <div class="product-header">
                     <div class="section_title title_style2">
                        <h2 class="mb-3">Products</h2>
-                       <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut laborum esse vero dolorum harum aliquid veniam aliquam dicta nostrum eos.</h5>
+                       <h5>Discover sophistication at its finest with M-tex Resources. Our well-curated selection of men's, women's, and children's </h5>
                     </div>
                     <div class="product_tab_btn">
                         <ul class="nav" role="tablist">
