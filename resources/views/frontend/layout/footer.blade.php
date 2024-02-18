@@ -70,10 +70,10 @@
                                 <div class="footer_social">
                                     <h3>follow us on</h3>
                                     <ul>
-                                        <li><a href="{{ $setting->first()->facebook }}"><i class="zmdi zmdi-facebook"></i></a></li>
-                                        <li><a href="{{ $setting->first()->twitter }}"><i class="zmdi zmdi-twitter"></i></a></li>
-                                        <li><a href="{{ $setting->first()->instagram }}"><i class="zmdi zmdi-instagram"></i></a></li>
-                                        <li><a href="{{ $setting->first()->linkedin }}"><i class="zmdi zmdi-linkedin"></i></a></li>
+                                        <li><a href="{{ $setting->first()->facebook }}" target="_blank"><i class="zmdi zmdi-facebook"></i></a></li>
+                                        <li><a href="{{ $setting->first()->twitter }}" target="_blank"><i class="zmdi zmdi-twitter"></i></a></li>
+                                        <li><a href="{{ $setting->first()->instagram }}" target="_blank"><i class="zmdi zmdi-instagram"></i></a></li>
+                                        <li><a href="{{ $setting->first()->linkedin }}" target="_blank"><i class="zmdi zmdi-linkedin"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
