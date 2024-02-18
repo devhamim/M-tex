@@ -56,11 +56,11 @@
 <div class="product_area color_two mb-62 py-3">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-6 m-auto">
+            <div class="col-12 col-lg-10 m-auto">
                <div class="product-header">
                     <div class="section_title title_style2">
                        <h2 class="mb-3">Products</h2>
-                       <h5>Discover sophistication at its finest with M-tex Resources. Our well-curated selection of men's, women's, and children's </h5>
+                       <h5>M-tex Resources offers a range of high-end, sophisticated apparel for men, women, and children, renowned for its distinctive designs and exceptional quality. Elevate your style with every product embodying elegance and skill.</h5>
                     </div>
                     <div class="product_tab_btn">
                         <ul class="nav" role="tablist">
@@ -119,15 +119,13 @@
 <div class="banner_area banner-style9 mb-70 mt-30 py-3" style="background: #f1f1f1">
     <div class="container py-5">
         <div class="row">
-            <div class="col-7 col-lg-6">
+            <div class="col-7 col-lg-9">
                 <div class="section_title title_style2" style="text-align: start;">
                    <h2 class="mb-3" style="padding: 0;background: #f1f1f1">Our Client</h2>
-                   <h5>This Section is under construction</h5>
+                   <h5>Our customers are the foundation of M-Tex Resources' success. We work with a wide spectrum of companies, from vibrant startups to market leaders, providing specialized solutions and building enduring relationships. Examine the success stories of our happy customers to see how we can help your company reach new heights.</h5>
                 </div>
             </div>
-            <div class="col-lg-3">
 
-            </div>
             <div class="col-lg-3 col-5 text-end">
                 <div class="view__work">
                     <a href="{{route('our.clients')}}">Read More </a>
@@ -153,10 +151,10 @@
 <section class="blog_section color_two mb-62 pb-3">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-6 m-auto">
+            <div class="col-12 col-lg-10 m-auto">
                 <div class="section_title title_style2">
                    <h2 class="mb-3">Latest Blog</h2>
-                   <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut laborum esse vero dolorum harum aliquid veniam aliquam dicta nostrum eos.</h5>
+                   <h5>Welcome to our Blog – Your Gateway to Industry Insights and Expertise. Stay informed with the latest trends, best practices, and thought leadership articles curated by our team of experts. Explore the knowledge hub that empowers your business growth.</h5>
                 </div>
             </div>
         </div>
