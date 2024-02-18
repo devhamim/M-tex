@@ -47,7 +47,7 @@
                                         <li><a href="{{ route('our.clients') }}">Client</a></li>
                                         <li><a href="{{ route('our.blog') }}">Blog</a></li>
                                         <li><a href="{{ route('contect') }}">Contact Us</a></li>
-                                        <li><a href="{{ route('our.privacy.policy') }}">Privacy Policy</a></li>
+                                        {{-- <li><a href="{{ route('our.privacy.policy') }}">Privacy Policy</a></li> --}}
                                     </ul>
                                 </div>
                             </div>
