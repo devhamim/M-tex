@@ -27,7 +27,7 @@
                  {{-- @if ( $abouts->first() != null) --}}
                  <div class="col-lg-12 col-md-12">
                     <div class="about_content">
-                        <h1 style="text-align: center">history</h1>
+                        <h1 style="text-align: center">Our Promise</h1>
                         <p>At M-Tex Resources we go beyond merely delivering high quality manufacturing solutions at competitive prices. We are dedicated to offering a wide range of services so that our clients may rely on us for knowledgeable assistance at each stage of the procedure. From initial concept and design to the last phases of deliver, as well as ongoing marketing and merchandising assistance, we are with you every step of the way. To put it simply we take care of everything to ensure client satisfaction prompt delivery, affordable prices, flawless design and unwavering quality.</p>
 
                         <h4 style="font-size: 20px">TRUSTWORTHY</h4>

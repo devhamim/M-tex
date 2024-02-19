@@ -25,6 +25,7 @@
                 <div class="blog_wrapper">
                     <div class="blog_header">
                         <h1>Blog</h1>
+                        <h5 class="mt-3">Welcome to our Blog – Your Gateway to Industry Insights and Expertise. Stay informed with the latest trends, best practices, and thought leadership articles curated by our team of experts. Explore the knowledge hub that empowers your business growth.</h5>
                     </div>
                     <div class="row">
                         @foreach ($blogs as $blog)

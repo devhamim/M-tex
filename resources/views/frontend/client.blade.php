@@ -25,7 +25,7 @@
             <div class="col-lg-10 m-auto">
                 <div class="section_title title_style2">
                     <h2>our Client</h2>
-                    {{-- <h5>Our customers are the foundation of M-Tex Resources' success. We work with a wide spectrum of companies, from vibrant startups to market leaders, providing specialized solutions and building enduring relationships. Examine the success stories of our happy customers to see how we can help your company reach new heights.</h5> --}}
+                    <h5 class="mt-3">Our customers are the foundation of M-Tex Resources' success. We work with a wide spectrum of companies, from vibrant startups to market leaders, providing specialized solutions and building enduring relationships. Examine the success stories of our happy customers to see how we can help your company reach new heights.</h5>
                  </div>
             </div>
         </div>

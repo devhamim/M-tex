@@ -13,7 +13,7 @@
                            <h1 class="text-white"> {{ $banner->title }}</h1>
                             <p class="text-white">{{ $banner->description }}</p>
                             <a class="btn btn-dark" href="{{route('about_us')}}">About Us</a>
-                            <a class="btn btn-dark" href="{{route('contect')}}">Contect</a>
+                            <a class="btn btn-dark" href="{{route('contect')}}">Contact</a>
                         </div>
                    </div>
                </div>
@@ -153,7 +153,7 @@
         <div class="row">
             <div class="col-12 col-lg-10 m-auto">
                 <div class="section_title title_style2">
-                   <h2 class="mb-3">Latest Blog</h2>
+                   <h2 class="mb-3">Blog</h2>
                    <h5>Welcome to our Blog – Your Gateway to Industry Insights and Expertise. Stay informed with the latest trends, best practices, and thought leadership articles curated by our team of experts. Explore the knowledge hub that empowers your business growth.</h5>
                 </div>
             </div>
@@ -189,7 +189,7 @@
 </section>
 <!--blog area end-->
 
-<!--contect area start-->
+<!--Contact area start-->
 <section>
     <div class="container">
         <div class="contact_area">
@@ -197,7 +197,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="section_title title_style2">
-                           <h2>Contect Us</h2>
+                           <h2>Contact Us</h2>
                         </div>
                     </div>
                 </div>
@@ -241,7 +241,7 @@
         </div>
     </div>
 </section>
-<!--contect area end-->
+<!--Contact area end-->
 
 @endsection
 

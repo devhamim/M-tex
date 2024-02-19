@@ -16,10 +16,11 @@
                                         <p>{{ $setting->first()->about }}</p>
                                     @endif
                                 </div>
-
+                                <p><strong>M-Tex Resources</strong></p>
+                                <p>Uniqueness | Quality | Commitment</p>
                                 @if ($setting->first()->address != null)
                                 <p><strong>Register Office:</strong> {{ $setting->first()->address }}</p>
-                                <p><strong>Corporate Office:</strong> M-Tex Resources Road No: 11, House No; 532, Baridhara DOHS, Dhaka – 1206.</p>
+                                <p><strong>Corporate Office:</strong> Road No: 11, House No; 532, Baridhara DOHS, Dhaka – 1206.</p>
                                 @endif
                                 @if ($setting->first()->number != null)
                                     <p><strong>Mobile No:</strong> <a href="tel:{{ $setting->first()->number }}">{{ $setting->first()->number }}</a></p>
@@ -62,9 +63,9 @@
                                     </form>
                                     <!-- mailchimp-alerts Start -->
                                     <div class="mailchimp-alerts text-centre">
-                                        <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
-                                        <div class="mailchimp-success"></div><!-- mailchimp-success end -->
-                                        <div class="mailchimp-error"></div><!-- mailchimp-error end -->
+                                        <div class="mailchimp-submitting"></div>
+                                        <div class="mailchimp-success"></div>
+                                        <div class="mailchimp-error"></div>
                                     </div><!-- mailchimp-alerts end -->
                                 </div>
                                 <div class="footer_social">

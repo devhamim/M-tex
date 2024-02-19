@@ -9,7 +9,7 @@
                 <div class="breadcrumb_content" style="padding: 120px 0; color: #fff">
                     <ul>
                         <li><a href="{{url('/')}}">home</a></li>
-                        <li>Contect</li>
+                        <li>Contact</li>
                     </ul>
                 </div>
             </div>
@@ -24,7 +24,7 @@
         <div class="row mb-5">
             <div class="col-lg-6 m-auto">
                 <div class="text-center">
-                    <h3>contact us</h3>
+                    <h3>Contact us</h3>
                 </div>
             </div>
         </div>
@@ -34,15 +34,16 @@
 
                      <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram anteposuerit litterarum formas human. qui sequitur mutationem consuetudium lectorum. Mirum est notare quam</p>
                     <ul>
-                        <li><i class="fa fa-map-marker"></i><strong>Register Office:</strong> M-Tex Resources Uniqueness | Quality | Commitment 20 Sukrabad, Flat No: C2, Dhanmondi, Dhaka – 1207</li>
-                        <li><i class="fa fa-map-marker"></i><strong>Corporate Office:</strong> M-Tex Resources Road No: 11, House No; 532, Baridhara DOHS, Dhaka – 1206.</li>
+                        <li><i class="fa fa-map-marker"></i><strong>Register Office:</strong> 20 Sukrabad, Flat No: C2, Dhanmondi, Dhaka – 1207</li>
+                        <li><i class="fa fa-map-marker"></i><strong>Corporate Office:</strong> Road No: 11, House No; 532, Baridhara DOHS, Dhaka – 1206.</li>
                         @if ($settings->first()->number != null)
                             <li><i class="fa fa-phone"></i><strong>Mobile No:</strong> <a href="tel:{{$settings->first()->number}}">{{$settings->first()->number}}</a>  </li>
                         @endif
                             <li><i class="fa fa-phone"></i><strong>Tel No:</strong> <a href="tel:+880 48111852">+880 48111852</a>  </li>
                         @if ($settings->first()->email != null)
                             <li><i class="fa fa-envelope-o"></i><a href="{{$settings->first()->email}}">{{$settings->first()->email}}</a></li>
-                        @endif
+                            @endif
+                            <li><i class="fa fa-envelope-o"></i><a href="moinul.islam@mtex-res.com">moinul.islam@mtex-res.com</a></li>
                     </ul>
                 </div>
             </div>
@@ -81,7 +82,7 @@
 <!-- contact-area-end -->
 <div class=" mt-60">
     <div class="map-area">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116833.95338886736!2d90.41968899999999!3d23.7808405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1705312613142!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.843894557041!2d90.37510988576508!3d23.75294553369265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b941aaf7b751%3A0xaf31491bf006b21!2s20%20Sukrabad%20Rd%2C%20Dhaka%201215!5e0!3m2!1sen!2sbd!4v1708321213622!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
  </div>
 @endsection
