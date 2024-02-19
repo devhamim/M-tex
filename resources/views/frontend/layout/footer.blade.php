@@ -5,7 +5,7 @@
                <div class="col-lg-5">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
-                            <div class="widgets_container contact_us">
+                            <div class="widgets_container contact_us footer_p">
                                <div class="footer_logo">
                                    @if ($setting->first()->footer_logo != null)
                                         <a href="{{ url('/') }}"><img src="{{ asset('uploads/setting') }}/{{ $setting->first()->footer_logo }}" alt=""></a>
@@ -16,7 +16,7 @@
                                         <p>{{ $setting->first()->about }}</p>
                                     @endif
                                 </div>
-                                <p><strong>M-Tex Resources</strong></p>
+                                <h3 style="margin-bottom: 5px"><strong>M-Tex Resources</strong></h3>
                                 <p>Uniqueness | Quality | Commitment</p>
                                 @if ($setting->first()->address != null)
                                 <p><strong>Register Office:</strong> {{ $setting->first()->address }}</p>

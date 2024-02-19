@@ -197,6 +197,9 @@ menuitem > menu > menuitem.hover > menu > menuitem{
    opacity: 1;
 }
 
+.footer_p p{
+    font-size: 14px;
+}
 
     </style>
 

@@ -33,6 +33,9 @@
                <div class="contact_message content">
 
                      <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram anteposuerit litterarum formas human. qui sequitur mutationem consuetudium lectorum. Mirum est notare quam</p>
+
+                     <h3 style="margin-bottom: 5px"><strong>M-Tex Resources</strong></h3>
+                    <p>Uniqueness | Quality | Commitment</p>
                     <ul>
                         <li><i class="fa fa-map-marker"></i><strong>Register Office:</strong> 20 Sukrabad, Flat No: C2, Dhanmondi, Dhaka – 1207</li>
                         <li><i class="fa fa-map-marker"></i><strong>Corporate Office:</strong> Road No: 11, House No; 532, Baridhara DOHS, Dhaka – 1206.</li>
