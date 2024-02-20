@@ -65,12 +65,12 @@
                                     <a>Product</a>
                                     <menu style="margin-left: 40%; margin-top: -20%">
                                         @foreach ($categories as $category)
-                                            <menuitem style="background: hsla(195, 95%, 68%, 0.9); text-align: center">
+                                            <menuitem style="background: hsla(44, 100%, 80%, 0.9); text-align: center">
                                                 <a href="{{ route('our.product', $category->id) }}">{{ $category->name }}</a>
                                                 <menu >
                                                     @foreach ($subcategories as $subcat)
                                                         @if ($subcat->category_id == $category->id)
-                                                            <menuitem style="background: hsla(195, 95%, 68%, 0.9)">
+                                                            <menuitem style="background: hsla(44, 100%, 80%, 0.9)">
                                                                 <a href="{{ route('our.sub.product', $subcat->id) }}">{{ $subcat->name }}</a>
                                                             </menuitem>
                                                         @endif
@@ -132,29 +132,29 @@
                             <div class="main_menu menu_position">
                                 <nav style="text-align: end">
                                     <menu>
-                                        <menuitem style="color: #fff">
+                                        <menuitem style="color: #ff6140">
                                             <a href="{{ url('/') }}">Home</a>
                                         </menuitem>
-                                        <menuitem style="color: #fff">
+                                        <menuitem style="color: #ff6140">
                                             <a href="{{ route('about_us') }}">About Us</a>
                                         </menuitem>
-                                        <menuitem style="color: #fff">
+                                        <menuitem style="color: #ff6140">
                                             <a href="{{ route('our.promise') }}">Our Promise</a>
                                         </menuitem>
-                                        <menuitem style="color: #fff">
+                                        <menuitem style="color: #ff6140">
                                             <a href="{{ route('sustainability') }}">Sustainability</a>
                                         </menuitem>
-                                        <menuitem id="demo1" style="color: #fff">
+                                        <menuitem id="demo1" style="color: #ff6140">
                                             <a>Product</a>
                                             <menu>
                                                 {{-- <menuitem><a>about</a></menuitem> --}}
                                                 @foreach ($categories as $category)
-                                                    <menuitem style="background: hsla(195, 95%, 68%, 0.9); text-align: center">
+                                                    <menuitem style="background: hsla(44, 100%, 80%, 0.9); text-align: center">
                                                         <a href="{{ route('our.product', $category->id) }}">{{ $category->name }}</a>
                                                         <menu >
                                                             @foreach ($subcategories as $subcat)
                                                                 @if ($subcat->category_id == $category->id)
-                                                                    <menuitem style="background: hsla(195, 95%, 68%, 0.9)">
+                                                                    <menuitem style="background: hsla(44, 100%, 80%, 0.9)">
                                                                         <a href="{{ route('our.sub.product', $subcat->id) }}">{{ $subcat->name }}</a>
                                                                     </menuitem>
                                                                 @endif
@@ -166,13 +166,13 @@
 
                                             </menu>
                                         </menuitem>
-                                        <menuitem style="color: #fff">
+                                        <menuitem style="color: #ff6140">
                                             <a href="{{ route('our.clients') }}">Client</a>
                                         </menuitem>
-                                        <menuitem style="color: #fff">
+                                        <menuitem style="color: #ff6140">
                                             <a href="{{ route('our.blog') }}">Blog</a>
                                         </menuitem>
-                                        <menuitem style="color: #fff">
+                                        <menuitem style="color: #ff6140">
                                             <a href="{{ route('contect') }}"> Contact Us</a>
                                         </menuitem>
                                     </menu>

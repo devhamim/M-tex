@@ -567,7 +567,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .offcanvas_menu_wrapper {
   width: 290px;
   position: fixed;
-  background: #5fd3fb;
+  background: #ffe499;
   z-index: 99;
   top: 0;
   height: 100vh;
@@ -1957,7 +1957,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   z-index: 999;
 }
 .header_two .sticky-header.sticky {
-  background: hsla(195, 95%, 68%, 0.9);
+  background: hsla(44, 100%, 80%, 0.9);
 }
 
 .color_two .main_menu nav > ul > li > a {
@@ -8249,7 +8249,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 /*  07. footer area css here */
 .footer_widgets {
-  background: #5fd3fb;
+  background: #ffe499;
 }
 
 .footer_top {

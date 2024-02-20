@@ -159,10 +159,11 @@ nav {
 }
 
 nav a {
-   color:#fff;
+   color:#ff6140;
    transition: background 0.5s, color 0.5s, transform 0.5s;
    padding:20px 25px;
    position:relative;
+   font-weight: 700;
 }
 
 nav a:hover:before {
