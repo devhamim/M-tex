@@ -144,7 +144,7 @@ class FrontendController extends Controller
     //our_product
     function our_product($id){
         $products = product::where('status', 1)->where('category_id', $id)->paginate(24);
-        $categorys = category::where('status', 1)->get();
+        $categorys = category::where('status', 1)->where('id', $id)->get();
         $subcategorys = subcategory::where('status', 1)->where('category_id', $id)->get();
         return view('frontend.product', [
             'products'=>$products,
@@ -155,7 +155,7 @@ class FrontendController extends Controller
     // our_sub_product
     function our_sub_product($id){
         $products = product::where('status', 1)->where('subcategory_id', $id)->paginate(24);
-        $categorys = subcategory::where('status', 1)->get();
+        $categorys = subcategory::where('status', 1)->where('id', $id)->get();
         $subcategorys = subcategory::where('status', 1)->where('id', $id)->get();
         return view('frontend.product', [
             'products'=>$products,

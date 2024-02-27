@@ -9,7 +9,7 @@
                 <div class="breadcrumb_content" style="padding: 120px 0; color: #fff">
                     <ul>
                         <li><a href="{{url('/')}}">home</a></li>
-                        <li>history</li>
+                        <li>Our Promise</li>
                     </ul>
                 </div>
             </div>

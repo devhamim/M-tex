@@ -54,65 +54,42 @@
 
     <style>
 
-
-/* Popup container - can be anything you want */
-.popup {
-  /* position: relative; */
+/* Tooltip container */
+.tooltip {
+  position: relative;
   display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  opacity: 1;
 }
 
-/* The actual popup */
-.popup .popuptext {
+/* Tooltip text */
+.tooltip .tooltiptext {
     visibility: hidden;
-    width: 100%;
-    background-color: #555;
+    width: 500%;
+    bottom: 90%;
+    left: -200%;
+    background-color: black;
     color: #fff;
     text-align: center;
+    padding: 5px;
     border-radius: 6px;
-    padding: 10px;
     position: absolute;
-    z-index: 999;
-    bottom: 0%;
-    right: 0%;
-    margin-left: 0;
-    height: auto; /* Set height to auto */
+    z-index: 1;
 }
-
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
+.tooltip .tooltiptext::after {
+  content: " ";
   position: absolute;
-  top: 100%;
+  top: 100%; /* At the bottom of the tooltip */
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: black transparent transparent transparent;
 }
 
-/* Toggle this class - hide and show the popup */
-.popup .show {
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
   visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
 }
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
-
 
 /* HTML Nav Styles */
 

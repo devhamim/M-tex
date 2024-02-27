@@ -22,6 +22,32 @@
 <div class="product_area color_two mb-62 py-3">
     <div class="container">
         <div class="row">
+            <div class="col-lg-6 m-auto">
+                <div class="text-center" style="font-weight: 900">
+                    @if ($subcategorys->isNotEmpty())
+                        @if ($subcategorys->first()->rel_to_cat == '')
+                            <h2>{{ $subcategorys->first()->rel_to_cat }}</h2>
+                        @else
+                            @if ($categorys->isNotEmpty() && Route::currentRouteName() == 'our.product')
+                                <h2>{{ $categorys->first()->name }}</h2>
+                            @elseif (Route::currentRouteName() == 'our_sub_product')
+                                <h2>{{ $subcategorys->first()->category_id }}</h2>
+                            @else
+                                <h2>{{ $subcategorys->first()->rel_to_cat->name }}</h2>
+                            @endif
+                        @endif
+                    @else
+                        @if ($categorys->isNotEmpty() && Route::currentRouteName() == 'our.product')
+                            <h2>{{ $categorys->first()->name }}</h2>
+                        @else
+                            {{-- <h2>{{ $categorys->first()->name }}</h2> --}}N/A
+                        @endif
+                    @endif
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-12 col-lg-6 m-auto">
                <div class="product-header">
                     <div class="product_tab_btn">

@@ -32,7 +32,7 @@
             <div class="col-lg-6 col-md-12">
                <div class="contact_message content">
 
-                     <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram anteposuerit litterarum formas human. qui sequitur mutationem consuetudium lectorum. Mirum est notare quam</p>
+                     <p>If you have any questions about our product and our services please do not hesitate to contact with us.</p>
 
                      <h3 style="margin-bottom: 5px"><strong>M-Tex Resources</strong></h3>
                     <p>Uniqueness | Quality | Commitment</p>
